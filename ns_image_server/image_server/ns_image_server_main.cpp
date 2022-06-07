@@ -656,7 +656,7 @@ int main(int argc, char ** argv){
 	try {
 
 #ifndef _WIN32
-        if (getuid() == 0)
+        if (getuid() != 0)
             cerr << "WARNING: not running as root user\n";
 #endif
 
